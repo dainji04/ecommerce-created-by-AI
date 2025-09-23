@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for kid-friendly design */
+body {
+  font-family: 'Comic Sans MS', cursive, system-ui;
+  background: linear-gradient(135deg, #FFE0B2 0%, #F8BBD9 50%, #E1BEE7 100%);
+  min-height: 100vh;
+}
+
+.btn-kid {
+  @apply px-6 py-3 rounded-full text-white font-bold text-lg transform transition-all duration-200 hover:scale-105 shadow-lg;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-purple hover:to-kid-blue;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-kid-green to-kid-orange hover:from-kid-orange hover:to-kid-green;
+}
+
+.card-kid {
+  @apply bg-white rounded-3xl shadow-xl p-6 transform transition-all duration-200 hover:scale-105 border-4 border-kid-pink;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #4FC3F7, #BA68C8, #F48FB1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
